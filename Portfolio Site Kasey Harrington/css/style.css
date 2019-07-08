@@ -26,6 +26,17 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+ header {
+   background-color: #ff44c4;
+   padding: 10px;
+   margin: 10px;
+   border-bottom: 3px solid #4a4a4a;
+   position: relative;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
 
 body {
   font-family: 'Oswald', sans-serif;
@@ -435,4 +446,16 @@ a:focus {
 .button.contact:active {
   background-color: #5f9ea0
   color: #bfd8d9 !important;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
