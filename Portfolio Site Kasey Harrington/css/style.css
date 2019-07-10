@@ -10,14 +10,47 @@ Link and Button Color (CadetBlue): #5F9EA0; .20 darker: #263f40; .80 lighter: #b
 }
 
 header {
-  background-color: #ff44c4;
-  padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
-  position: relative;
+  background-color: #F5FFFA;
+  text-align: center;
+  padding: 10px 0;
+  margin: auto;
+  border-bottom: 3px solid #C0C0C0;
+  position: fixed;
+  width: 100%;
+}
+header {
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.49);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.49);
+  box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.49);;
 }
 
+/* Nav */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color: #5F9EA0
+}
+nav > ul > li > a:hover {
+  color: #263f40
+}
+nav > ul > li > a:active {
+  color: #bfd8d9
+}
 
+main {
+  padding-top: 133px;
+}
 
 body {
   font-family: 'Oswald', sans-serif;
@@ -38,6 +71,12 @@ h1 {
 }
 #hero h1 {
   text-align: center; /* Centers text */
+}
+#hero {
+  background-color: #F5FFFA;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 h2 {
@@ -122,6 +161,14 @@ a:focus {
 
 /* Logo */
 .logo {
-  max-width: 250px
+  max-width: 250px;
   text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #C0C0C0;
+  padding: 25px 0;
+  margin: 25px auto 0 auto;
+  width:100%;
 }
