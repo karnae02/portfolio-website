@@ -71,6 +71,7 @@ h1 {
 }
 #hero h1 {
   text-align: center; /* Centers text */
+  padding-top: 120px;
 }
 #hero {
   background-color: #F5FFFA;
