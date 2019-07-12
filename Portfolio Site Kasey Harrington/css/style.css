@@ -11,7 +11,7 @@ Link and Button Color (CadetBlue): #5F9EA0; .20 darker: #263f40; .80 lighter: #b
 
 header {
   background-color: #F5FFFA;
-  text-align: center;
+  text-align: unset;
   padding: 10px 0;
   margin: auto;
   border-bottom: 3px solid #C0C0C0;
