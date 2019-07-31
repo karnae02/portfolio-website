@@ -1,8 +1,8 @@
 /*
 Colors used:
 Primary Color (MintCream): #F5FFFA;
-Secondary Color (Silver): #C0C0C0;
-Link and Button Color (CadetBlue): #5F9EA0; .20 darker: #263f40; .80 lighter: #bfd8d9;
+Secondary Color (Silver): #C0C0C0; lighter: #e7e7e7
+Link and Button Color (Darkseagreen): #396039; .65: #8fbc8f dark: #0d160d
 */
 
 * {
@@ -13,7 +13,7 @@ header {
   background-color: #F5FFFA;
   padding: 10px 0 4px;
   margin: auto;
-  border-bottom: 3px solid #C0C0C0;
+  border-bottom: 3px solid #e7e7e7;
   position: fixed;
   width: 100%;
 }
@@ -33,16 +33,16 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #396039;
 }
 nav > ul > li > a:visited {
-  color: #5F9EA0
+  color: #396039;
 }
 nav > ul > li > a:hover {
-  color: #263f40
+  color: #0d160d;
 }
 nav > ul > li > a:active {
-  color: #bfd8d9
+  color: #396039
 }
 .navtoggle li:not(:last-child) {
   display: none;
@@ -77,7 +77,7 @@ main {
   padding-top: 56px;
 }
 img {
-  max-width: 100%;
+  max-width: 40%;
 }
 
 body {
@@ -115,6 +115,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+
 }
 
 h3 {
@@ -129,11 +130,11 @@ h4 {
 Buttons and links
 */
 a {
-  color: #5F9EA0;
+  color: #396039;
   text-decoration: none; /* No underlining */
 }
   a:visited { /* visited link */
-  color: #5F9EA0;
+  color: #396039;
 }
 a:hover {
   color: #263f40;
@@ -143,19 +144,19 @@ a:active { /* selected link */
   color: #bfd8d9;
 }
 a:focus {
-  color: #263f40;
+  color: #8fbc8f;
   text-decoration: underline;
 
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #5f9ea0;
+  background-color: #396039;
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #263f40; /* width of the border, type, color */
+  border-bottom: 2px solid #8fbc8f; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
@@ -163,22 +164,22 @@ a:focus {
   text-decoration: none;
 }
 .button:active { /*selected link */
-  color:#bfd8d9;
+  color:#396039;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #5f9ea0 !important;
+  color: #396039 !important;
   text-transform: uppercase;
-  border: 2px solid #5f9ea0;
+  border: 2px solid #396039;
 }
 .button.contact:hover {
-  background-color: #5f9ea0;
+  background-color: #396039;
   color: #ffffff !important;
 }
 .button.contact:active {
-  background-color: #5f9ea0
-  color: #bfd8d9 !important;
+  background-color: #5f9ea0;
+  color: #396039 !important;
 }
 
 /* Layout styling */
@@ -206,10 +207,17 @@ a:focus {
 
 /* Footer */
 footer {
-  background-color: #C0C0C0;
+  background-color: #e7e7e7;
   padding: 25px 0;
   margin: 25px auto 0 auto;
   width:100%;
+}
+.icons {
+  width: 20%;
+  font-size: 1.2em;
+  align-content: center;
+  margin: 0;
+  padding: 10px 0;
 }
 
 /* ==============================
@@ -247,7 +255,7 @@ Medium devices (640px and larger)
     width: 50%;
     padding: 10px;
   }
-  .row: :after {
+  .row::after {
     content: "";
     clear: both;
     display: table;
@@ -258,7 +266,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   header {
-  .container {
+  .container
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -267,21 +275,21 @@ Large devices (1024px or larger)
     font-size: 16px;
   }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
-
 #about-page h3 {
   margin-top: 0;
 }
 
 @keyframes color-change {
   0% {fill: #edc655;}
-  50% {fill: #fcffad}
+  50% {fill: #fcffad;}
   100% {fill: #f76414;}
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -291,9 +299,10 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {transform: translate(0,50px)}
+  to {transform: translate(200px,50px)}
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -304,9 +313,11 @@ X-large devices (1440px or larger)
   animation: 30s cloud-move infinite alternate linear; } */
 
   @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
+    from {transform: translate(446px,48px)}
+    to {transform: translate(100px, 48px)}
   }
+
   .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
 }
