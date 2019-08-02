@@ -27,7 +27,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 1em 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -47,6 +47,11 @@ nav > ul > li > a:active {
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
+.navtoggle li: last-child {
+  display: none;
+}
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
