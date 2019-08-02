@@ -75,6 +75,7 @@ nav > ul > li > a:active {
 
 main {
   padding-top: 56px;
+  padding-left: 15px;
 }
 img {
   max-width: 100%;
