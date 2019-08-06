@@ -1,0 +1,329 @@
+/*
+Colors used:
+Primary Color (MintCream): #F5FFFA;
+Secondary Color (Silver): #C0C0C0; lighter: #e7e7e7
+Link and Button Color (Darkseagreen): #396039; .65: #8fbc8f dark: #0d160d
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #F5FFFA;
+  padding: 10px 0 4px;
+  margin: auto;
+  border-bottom: 3px solid #e7e7e7;
+  position: fixed;
+  width: 100%;
+}
+header {
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.49);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.49);
+  box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.49);;
+}
+
+/* Nav */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #396039;
+}
+nav > ul > li > a:visited {
+  color: #396039;
+}
+nav > ul > li > a:hover {
+  color: #0d160d;
+}
+nav > ul > li > a:active {
+  color: #396039
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li: last-child {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 56px;
+  padding-left: 15px;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  padding-top: 100px;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+  padding-top: 120px;
+}
+#hero {
+  background-color: #F5FFFA;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#hero span {
+  display: block;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+/*
+Buttons and links
+*/
+a {
+  color: #396039;
+  text-decoration: none; /* No underlining */
+}
+  a:visited { /* visited link */
+  color: #000000;
+}
+a:hover {
+  color: #263f40;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #bfd8d9;
+}
+a:focus {
+  color: #8fbc8f;
+  text-decoration: underline;
+
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #396039;
+  color: #ffffff !important; /* needed to override the default link color */
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #8fbc8f; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:active { /*selected link */
+  color:#396039;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #396039 !important;
+  text-transform: uppercase;
+  border: 2px solid #396039;
+}
+.button.contact:hover {
+  background-color: #396039;
+  color: #ffffff !important;
+}
+.button.contact:active {
+  background-color: #5f9ea0;
+  color: #396039 !important;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+/* Logo */
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #e7e7e7;
+  padding: 25px 0;
+  margin: 25px auto 0 auto;
+  width:100%;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul {
+  margin: 1em 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+  body {
+    font-size: 16px;
+  }
+  [class*="col-"] {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  footer {
+    background-color: #e7e7e7;
+    padding: 250px 0px;
+    margin: 25px auto 0 auto;
+    width: 100%;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+  .container
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+#about-page h3 {
+  margin-top: 0;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px)}
+  to {transform: translate(200px,50px)}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} /* SHORT CSS would be .cloud-front {
+  animation: 30s cloud-move infinite alternate linear; } */
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px)}
+    to {transform: translate(100px, 48px)}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+}
